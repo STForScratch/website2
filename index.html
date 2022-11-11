@@ -128,7 +128,7 @@ var isBlink = (isChrome || isOpera) && !!window.CSS;
         </div>
         <script>
           async function getUsercount() {
-        var response = await fetch('/usercount.json')
+        var response = await fetch('/data/usercount.json')
           var data = await response.json()
           document.querySelector('h1.count').textContent = `${data.count} Users`
           }
