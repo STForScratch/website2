@@ -128,6 +128,9 @@ getFeatures()
           img.src = `https://stforscratch.github.io/data/images/${data[el].file}.png`
           img.loading = 'lazy'
           img.className = 'featureimage'
+          img.onerror = function() {
+            img.remove()
+          }
           div.appendChild(img)
           var h1 = document.createElement('h1')
           h1.textContent = data[el]['title']
