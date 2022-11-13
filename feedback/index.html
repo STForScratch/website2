@@ -112,6 +112,8 @@ var isBlink = (isChrome || isOpera) && !!window.CSS;
 document.querySelector('.empty').style.display = 'block'
             } else {
               document.querySelector('div.success').style.display = 'block'
+              document.querySelector('input').value = ''
+              document.querySelector('textarea').value = ''
             }
             }
             
