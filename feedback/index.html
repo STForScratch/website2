@@ -107,18 +107,11 @@ var isBlink = (isChrome || isOpera) && !!window.CSS;
     'Content-Type': 'application/json'
   })
 })
-            var data = await response.text()
+            var data = await response.json()
             if (data.error) {
 document.querySelector('.empty').style.display = 'block'
-            }
-            if (data === 'error') {
-              document.querySelector('div.error').style.display = 'block'
-            } else {
-            if (data === 'already') {
-              document.querySelector('div.already').style.display = 'block'
             } else {
               document.querySelector('div.success').style.display = 'block'
-            }
             }
             }
             
