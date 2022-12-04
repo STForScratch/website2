@@ -99,7 +99,7 @@ var isBlink = (isChrome || isOpera) && !!window.CSS;
             if (document.querySelector('textarea').value === '' || document.querySelector('input').value === '') {
               document.querySelector('div.empty').style.display = 'block'
             } else {
-        var response = await fetch("https://scratchtools-feedback.rgantzos.repl.co/feedback/", {
+        var response = await fetch("https://scratchtools-feedback.vercel.app/feedback/", {
   method: 'post',
   body: JSON.stringify({"username":document.querySelector('input').value,"description":document.querySelector('textarea').value}),
   mode: 'cors',
