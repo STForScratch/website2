@@ -32,8 +32,12 @@
     "link":"https://github.com/petabyt"
   },
   "veloce-vasta":{
-    "type":["code","ideas"],
+    "type":["code","ideas","review"],
     "link":"https://github.com/veloce-vasta"
+  },
+  "Dr-Lego":{
+    "type":["code"],
+    "link":"https://github.com/Dr-Lego"
   },
   "Electro-Corp":{
     "type":["code","community"],
